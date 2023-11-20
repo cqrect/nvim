@@ -27,6 +27,7 @@ return {
 					vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
 					vim.keymap.set("n", "g]", "<cmd>lua vim.diagnostic.goto_next({ buffer = 0 })<CR>", opts)
 					vim.keymap.set("n", "g[", "<cmd>lua vim.diagnostic.goto_prev({ buffer = 0 })<CR>", opts)
+					vim.keymap.set("n", "<leader>a", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
 				end,
 			})
 			-- Pyright
