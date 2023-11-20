@@ -56,6 +56,8 @@ return {
 					},
 				},
 			})
+			-- Gopls
+			lspconfig.gopls.setup({})
 		end,
 	},
 }
