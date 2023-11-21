@@ -26,6 +26,7 @@ return {
 					vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
 					vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
 					vim.keymap.set("n", "g]", "<cmd>lua vim.diagnostic.goto_next({ buffer = 0 })<CR>", opts)
+					vim.keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
 					vim.keymap.set("n", "g[", "<cmd>lua vim.diagnostic.goto_prev({ buffer = 0 })<CR>", opts)
 					vim.keymap.set("n", "<leader>a", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
 				end,
@@ -58,6 +59,8 @@ return {
 			})
 			-- Gopls
 			lspconfig.gopls.setup({})
+			-- Typescript
+			lspconfig.tsserver.setup({})
 		end,
 	},
 }
