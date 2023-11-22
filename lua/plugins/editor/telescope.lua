@@ -13,6 +13,11 @@ return {
 
 		require("telescope").setup({
 			defaults = {
+				pickers = {
+					find_files = {
+						hidden = true,
+					},
+				},
 				mappings = {
 					i = {
 						["<C-j>"] = actions.move_selection_next,

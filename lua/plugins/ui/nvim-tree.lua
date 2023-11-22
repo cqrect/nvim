@@ -3,6 +3,7 @@ return {
 	requires = {
 		"nvim-tree/nvim-web-devicons",
 	},
+	lazy = false,
 	keys = {
 		{ "<C-o>", "<cmd>NvimTreeToggle<CR>", desc = "Open nvim-tree" },
 	},
