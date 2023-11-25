@@ -61,6 +61,20 @@ return {
 			lspconfig.gopls.setup({})
 			-- Typescript
 			lspconfig.tsserver.setup({})
+			-- Tailwind css
+			lspconfig.tailwindcss.setup({})
+			-- Emmet
+			lspconfig.emmet_ls.setup({})
+			-- Rust
+			lspconfig.rust_analyzer.setup({})
+			-- Css
+			lspconfig.cssls.setup({})
+			-- Clangd
+			lspconfig.clangd.setup({})
+			-- Html
+			lspconfig.html.setup({})
+			-- CMake
+			lspconfig.cmake.setup({})
 		end,
 	},
 }
